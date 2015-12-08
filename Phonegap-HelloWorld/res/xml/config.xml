@@ -44,33 +44,6 @@
       <preference name="disallowOverscroll" value="true" />
     -->
 
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-          id="cordova-plugin-yandexnavi"
-          version="0.0.0">
-
-    <name>Yandexnavi</name>
-    <description>Cordova yandex navigator plugin</description>
-    <license>Apache 2.0</license>
-    <keywords>yandex,yandexnavi</keywords>
-    <repo></repo>
-    <issue></issue>
-
-
-    <!-- android -->
-    <platform name="android">
-        <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="Yandexnavi">
-                <param name="android-package" value="org.apache.cordova.plugin.Yandexnavi"/>
-            </feature>
-        </config-file>
-        <js-module src="assets/www/yandexnavi.js" name="Yandexnavi">
-            <clobbers target="Yandexnavi" />
-        </js-module>
-        <source-file src="Yandexnavi.java" target-dir="src/org/examples/phonegap/example"/>
-    </platform>
-
-</plugin>
-
     <feature name="App">
       <param name="android-package" value="org.apache.cordova.App"/>
     </feature>
